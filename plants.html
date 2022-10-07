@@ -1,0 +1,40 @@
+---
+layout: base
+title: Animals
+pagination:
+  data: photos.h8stntd.media
+  size: 1
+---
+<header>
+    <h1>{{ title }} </h1>
+</header>
+
+  <body>
+    <ul style="align:center">
+      {% for plants in pagination.items -%}
+      <img src= "{{ animals.src.medium }}" alt="{{animals.alt}}">
+      <p>Photographer: {{animals.photographer}}</p>
+      {% endfor -%}
+    </ul>
+
+    <nav>
+          <ul style="text-align:center;">
+
+            <li>{% if pagination.href.previous %}<a href="{{pagination.href.previous}}">Previous</a>{% else %}Previous{% endif %}</li>
+            <li>{% if pagination.href.next %}<a href="{{pagination.href.next}}">Next</a>{% else %}Next{% endif %}</li>
+          </ul>
+    </nav>
+
+            <a href="http://localhost:8080//">Home</a>
+            <br>
+            <a href="http://localhost:8080/about/">About Us</a>
+</body>
+
+<footer>
+    <hr>
+    <p>
+        <small>
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+        </small>
+    </p>
+</footer>

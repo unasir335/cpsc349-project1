@@ -2,9 +2,28 @@
 layout: base
 title: Home
 ---
-<header>
+<header style= "text-align: center; font-size: 32px; padding:0;">
     <h1>{{ title }} </h1>
 </header>
+<br>
+
+<div style="text-align: center; font-size: 28px;">
+  <large>
+    <a href="animals">Animal Gallery</a>
+    <br>
+    <a href="about">About Us</a>
+  </large>
+<div>
+
+  <body>
+      {% for collection in photos.h8stntd.media -%}
+      <a href="http://localhost:8080/animals">
+        <img src= "{{ collection.src.tiny }}">
+        {% endfor -%}
+      </a>
+
+</body>
+
 
 <footer>
     <hr>
