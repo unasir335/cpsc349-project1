@@ -10,15 +10,15 @@ title: Home
 <div style="text-align: center; font-size: 28px;">
   <large>
     <p>Beautiful and exotic animals from all around the world in one gallery!</p><br>
-    <a href="animals">Animal Gallery</a>
+    <a href="/cpsc349-project1/_site/animals/1003848/index.html">Animal Gallery</a>
     <br>
-    <a href="about">About Us</a>
+    <a href="/cpsc349-project1/_site/about/index.html">About Us</a>
   </large>
 <div>
 
   <body>
       {% for collection in photos.h8stntd.media -%}
-      <a href="/cpsc349-project1/_site/animals/{{media.id}}">
+      <a href="/cpsc349-project1/animals/{{media.id}}">
         <img src= "{{ collection.src.tiny }}" alt="{{collection.alt}}">
         {% endfor -%}
       </a>
