@@ -9,6 +9,7 @@ title: Home
 
 <div style="text-align: center; font-size: 28px;">
   <large>
+    <p>Beautiful and exotic animals from all around the world in one gallery!</p><br>
     <a href="animals">Animal Gallery</a>
     <br>
     <a href="about">About Us</a>
@@ -17,8 +18,8 @@ title: Home
 
   <body>
       {% for collection in photos.h8stntd.media -%}
-      <a href="http://localhost:8080/animals">
-        <img src= "{{ collection.src.tiny }}">
+      <a href="/cpsc349-project1/animals/{{media.id}}">
+        <img src= "{{ collection.src.tiny }}" alt="{{collection.alt}}">
         {% endfor -%}
       </a>
 

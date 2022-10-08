@@ -1,5 +1,8 @@
 # Getting started with Project 1
 
+```output files are in "build" folder
+```
+
 Clone the cpsc349-project1 repository locally:
 
 ```shell-session
