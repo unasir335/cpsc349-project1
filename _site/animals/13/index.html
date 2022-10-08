@@ -1,13 +1,11 @@
----
-layout: base
-title: Animals
-pagination:
-  data: photos.h8stntd.media
-  size: 1
-  alias: anim
-permalink: "/animals/{{ pagination.pageNumber }}/index.html"
----
-<!DOCTYPE html>
+
+<head>
+    <title>Animals - CPSC 349 - Fall 2022 - Project 1</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -16,7 +14,7 @@ permalink: "/animals/{{ pagination.pageNumber }}/index.html"
   </head>
 
 <header>
-    <h1>{{ title }} </h1>
+    <h1>Animals </h1>
 </header>
 
 <div style="font-size:24px;margin:0; padding:0; text-align: center">
@@ -24,15 +22,15 @@ permalink: "/animals/{{ pagination.pageNumber }}/index.html"
 
           <ul>
           <div style="text-align:center;">
-            <p>{% if pagination.href.previous %}<a href="{{pagination.pageNumber | plus: 1}}">Previous</a>{% else %}Previous{% endif %}</p>
-            <p>{% if pagination.href.next %}<a href="{{pagination.pageNumber | minus: 1}}">Next</a>{% else %}Next{% endif %}</p>
+            <p><a href="14">Previous</a></p>
+            <p><a href="12">Next</a></p>
           </div>
           </ul>
 
     <ul style="align:center">
-      <img src= "{{ anim.src.large }}" alt="{{anim.alt}}">
-      <p>{{anim.alt}}</p>
-      <p>Photographer: {{anim.photographer}}</p>
+      <img src= "https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Panda Bear on Green Grass">
+      <p>Panda Bear on Green Grass</p>
+      <p>Photographer: Laura The Explaura</p>
     </ul>
 
             <a href="/cpsc349-project1">Home</a>
@@ -49,3 +47,5 @@ permalink: "/animals/{{ pagination.pageNumber }}/index.html"
         </small>
     </p>
 </footer>
+
+</body>
