@@ -5,7 +5,4 @@ module.exports = function (eleventyConfig) {
     notify: true,
     open: true
   })
-  return {
-    dir: {output: "_site"},
-  };
 }
